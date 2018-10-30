@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CSS Grid快速入门]]></title>
+    <url>%2F2018%2F10%2F30%2FCSS%20Grid%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[Grid布局是网站设计的基础，CSS Grid是创建网格布局强大和简单的工具 CSS Grid已获得主流浏览器(Safari, Firefox, Chrome, Edge)的原生支持Grid布局CSS Grid布局由两个核心部分组成：wrapper(Parent Element)和item(Child Element)html示例：12345678&lt;div class="wrapper"&gt;&lt;div&gt;1&lt;/div&gt;&lt;div&gt;2&lt;/div&gt;&lt;div&gt;3&lt;/div&gt;&lt;div&gt;4&lt;/div&gt;&lt;div&gt;5&lt;/div&gt;&lt;div&gt;6&lt;/div&gt;&lt;/div&gt; css示例： 要将wrapper元素变为grid，只需要display: grid;即可123.wrapper&#123;display: grid;&#125; 由于还未进行任何操作，它会将六个div堆叠在一起： Columns 和 Rows 要使其成为二维的grid容器，需要设置列和行的属性，需要使用到grid-template-column和grid-template-row示例：12345.wrapper&#123;display: grid;grid-template-columns: 100px 100px 200px;grid-template-rows: 50px 50px;&#125; 放置items 给每个items(Child Element)加上class示例： 12345678&lt;div class="wrapper"&gt;&lt;div class="item1"&gt;1&lt;/div&gt;&lt;div class="item2"&gt;2&lt;/div&gt;&lt;div class="item3"&gt;3&lt;/div&gt;&lt;div class="item4"&gt;4&lt;/div&gt;&lt;div class="item5"&gt;5&lt;/div&gt;&lt;div class="item6"&gt;6&lt;/div&gt;&lt;/div&gt; 创建一个3*2的grid布局： 12345.wrapper&#123;display: grid;grid-template-columns: 100px 100px 100px;grid-template-rows: 100px 100px;&#125; 要定位和调整items(Child Element)，需要使用到grid-column 和 grid-row示例： 1234.item1&#123;grid-column-start: 1;grid-column-end: 4;&#125; item1从第一条网格线开始到第四条网格线结束，将独占一行 网格线图： 简写方法: 123.item1&#123;grid-column: 1 / 4;&#125; 重新排列其它items元素： 123456789101112.item1 &#123;grid-column-start: 1;grid-column-end: 3;&#125;.item3 &#123;grid-row-start: 2;grid-row-end: 4;&#125;.item4 &#123;grid-column-start: 2;grid-column-end: 4;&#125;]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css grid</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown基本语法]]></title>
     <url>%2F2018%2F10%2F20%2FMarkdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[markdown是一种纯文本格式的标记语言，目标是为了实现易读易写。 一、标题语法：123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题 二、字体语法：1234**加粗***斜体****斜体加粗***~~删除线~~ 示例：加粗斜体斜体加粗删除线 三、引用语法：123&gt;引用&gt;&gt;引用嵌套&gt;&gt;&gt;引用嵌套 示例： 引用 引用嵌套 引用嵌套 四、分割线语法：12***--- 示例： 五、图片语法：1![图片alt](图片地址 "图片title") 示例： 六、超链接语法：1[超链接名](超链接地址 "超链接title") 示例：Ronie’s Blog 七、列表语法： 无序列表： 123* 列表一- 列表二+ 列表三 有序列表： 1231. 列表12. 列表23. 列表3 列表嵌套 12345678* 列表一 1. 列表1 2. 列表2 3. 列表3* 列表二 * 列表一 * 列表二 * 列表三 示例： 列表一 列表二 列表三 列表1 列表2 列表3 列表一 列表1 列表2 列表3 列表二 列表一 列表二 列表三八、表格语法：12345| 表头 | 表头 | 表头 || - | :-: | -: || 内容 | 内容 | 内容 || 内容 | 内容 | 内容 || 内容 |内容 | 内容 | 示例： 表头 表头 表头 内容 内容 内容 内容 内容 内容 内容 内容 内容 九、代码语法： 单行代码; 1`代码内容` 代码块 12345(```language) 代码。。。 代码。。。 代码。。。(```) 示例： 代码123代码。。。代码。。。代码。。。]]></content>
