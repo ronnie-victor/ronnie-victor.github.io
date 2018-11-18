@@ -117,7 +117,7 @@
 <meta property="og:site_name" content="Ronnie&#39;s  Blog">
 <meta property="og:description" content="深入的学习javascript语言，有一个很重要的知识点，是对call()和apply()的理解，在阅读一些开源框架源代码时，经常会看到这两个方法。在讨论这两个方法前，需要先回顾一下this的用法，因为call和apply与this有着密不可分的关系  每个函数都包含两个非继承而来的方法：call() 和 apply() 作用：在特定的作用域中调用函数，等于设置函数体内this对象的值，以扩充函">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-18T06:07:31.684Z">
+<meta property="og:updated_time" content="2018-11-18T06:11:34.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="call和apply方法总结">
 <meta name="twitter:description" content="深入的学习javascript语言，有一个很重要的知识点，是对call()和apply()的理解，在阅读一些开源框架源代码时，经常会看到这两个方法。在讨论这两个方法前，需要先回顾一下this的用法，因为call和apply与this有着密不可分的关系  每个函数都包含两个非继承而来的方法：call() 和 apply() 作用：在特定的作用域中调用函数，等于设置函数体内this对象的值，以扩充函">
@@ -379,7 +379,7 @@
                 
               
 
-              <time title="创建时间：2018-11-18 10:03:21 / 修改时间：14:07:31" itemprop="dateCreated datePublished" datetime="2018-11-18T10:03:21+08:00">2018-11-18</time>
+              <time title="创建时间：2018-11-18 10:03:21 / 修改时间：14:11:34" itemprop="dateCreated datePublished" datetime="2018-11-18T10:03:21+08:00">2018-11-18</time>
             
 
             
@@ -470,7 +470,7 @@
 <blockquote>
 <p>当person对象调用info()函数时，info函数内部的this指向的是person对象。即当this出现在对象的方法中时，那么该方法内部的this<br>指向的就是这个对象本身，也就是说this指向的时调用函数的对象</p>
 </blockquote>
-<h4 id="二、使用call和apply由什么用？"><a href="#二、使用call和apply由什么用？" class="headerlink" title="二、使用call和apply由什么用？"></a>二、使用call和apply由什么用？</h4><ul>
+<h4 id="二、使用call和apply有什么用？"><a href="#二、使用call和apply有什么用？" class="headerlink" title="二、使用call和apply有什么用？"></a>二、使用call和apply有什么用？</h4><ul>
 <li><p>回顾思考一下javascript中函数几种形式的调用：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -735,7 +735,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、什么是this？"><span class="nav-number">1.</span> <span class="nav-text">一、什么是this？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、使用call和apply由什么用？"><span class="nav-number">2.</span> <span class="nav-text">二、使用call和apply由什么用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、由代码引发的思考"><span class="nav-number">3.</span> <span class="nav-text">三、由代码引发的思考</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、call和apply的使用"><span class="nav-number">4.</span> <span class="nav-text">四、call和apply的使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、什么是this？"><span class="nav-number">1.</span> <span class="nav-text">一、什么是this？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、使用call和apply有什么用？"><span class="nav-number">2.</span> <span class="nav-text">二、使用call和apply有什么用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、由代码引发的思考"><span class="nav-number">3.</span> <span class="nav-text">三、由代码引发的思考</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、call和apply的使用"><span class="nav-number">4.</span> <span class="nav-text">四、call和apply的使用</span></a></li></ol></div>
             
 
           </div>
